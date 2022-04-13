@@ -1,14 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import Header from "./components/Header";
 
 const AppEl = styled.div`
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
 `;
 
 const App = () => {
-  return <AppEl>Hi</AppEl>;
+  return (
+    <AppEl>
+      <Header />
+    </AppEl>
+  );
 };
 
 export default App;

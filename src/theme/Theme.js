@@ -14,6 +14,7 @@ export const Colors = {
     TextGrey: "#B8BECD",
     TextGrey2: "#7D7987",
     TextGrey3: "#848484",
+    TextGrey4: "#fafafa",
   },
   Default: {
     White: "#FFFFFF",
@@ -129,9 +130,13 @@ export const TextStyles = {
     Lead3: {
       fontFamily: "Inter",
       FontSize: "15px",
-      LineHeight: "60px",
+      LineHeight: "40px",
       LetterSpacing: "0",
       FontWeight: 500,
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
     },
     Lead4: {
       fontFamily: "Inter",
@@ -157,7 +162,7 @@ export const TextStyles = {
     Lead7: {
       fontFamily: "Mulish",
       FontSize: "17px",
-      LineHeight: "60px",
+      LineHeight: "44px",
       LetterSpacing: "0",
       FontWeight: 700,
     },
