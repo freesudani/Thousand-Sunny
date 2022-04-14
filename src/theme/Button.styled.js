@@ -29,6 +29,15 @@ const Button = styled.button`
                 color: ${Colors.Default.White};
                 }
               `;
+      case "special":
+        return `
+                background-color: transparent;
+                color: ${Colors.Brand.OrangeMain};
+                border: transparent;
+                &:hover {
+                color: ${Colors.Brand.OrangeDark};
+                }
+              `;
       default:
         return `
                 background-color: transparent;
@@ -52,7 +61,7 @@ const Button = styled.button`
       case "md":
         return ` 
         width: 164px;
-        height: 60px;
+        height: 48px;
         ${TextStyles.Bundler(TextStyles.Lead.Lead4)};
          `;
       case "lg":

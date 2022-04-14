@@ -39,7 +39,7 @@ const HeaderEl = styled.div`
   position: relative;
   height: 786px;
   width: 1415px;
-  margin: 38px 93px;
+  margin: 38px auto 0px auto;
 `;
 
 const Title = styled.div`

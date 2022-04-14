@@ -141,7 +141,7 @@ export const TextStyles = {
     Lead4: {
       fontFamily: "Inter",
       FontSize: "17px",
-      LineHeight: "60px",
+      LineHeight: "48px",
       LetterSpacing: "0",
       FontWeight: 600,
     },
@@ -165,6 +165,22 @@ export const TextStyles = {
       LineHeight: "44px",
       LetterSpacing: "0",
       FontWeight: 700,
+    },
+    Lead8: {
+      fontFamily: "inter",
+      FontSize: "17px",
+      LineHeight: "25px",
+      LetterSpacing: "0",
+      FontWeight: 600,
+      color: "#042521",
+    },
+    Lead9: {
+      fontFamily: "Inter",
+      FontSize: "15px",
+      LineHeight: "24px",
+      LetterSpacing: "0",
+      FontWeight: 500,
+      color: "#80918E",
     },
   },
   Bundler: function (attr) {
