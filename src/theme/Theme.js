@@ -6,6 +6,7 @@ export const Colors = {
     BorderGrey: "#C4C4C4",
     BGWhite: "#FFFFFF",
     BGGrey: "#E5E5E5",
+    BGFooter: "#F9F9FB",
   },
   Text: {
     TextBlack: "#000000",

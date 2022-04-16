@@ -10,10 +10,8 @@ const ExploreEl = styled.div`
   display: flex;
   justify-content: space-between;
   height: 786px;
-  width: 1415px;
+  width: 100vw;
   margin: 267px auto 0px auto;
-  height: 550px;
-  width: 1242px;
 `;
 
 const Image = styled.div`

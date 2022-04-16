@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Explore from "./components/Explore";
 import Featured from "./components/Featured";
+import Footer from "./components/Footer";
 import Guides from "./components/Guides";
 import Header from "./components/Header";
 import Testimonials from "./components/Testimonials";
@@ -21,6 +22,7 @@ const App = () => {
       <Guides />
       <Testimonials />
       <Trending />
+      <Footer />
     </AppEl>
   );
 };
