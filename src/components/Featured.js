@@ -20,6 +20,11 @@ const FeaturedEl = styled.div`
   margin-top: 262px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: 1000px) {
+    width: 1000px;
+    margin-left: 100px;
+  }
 `;
 
 const Top = styled.div`
@@ -44,6 +49,12 @@ const Bottom = styled.div`
   grid-template-columns: 261px 261px 261px 261px;
   grid-template-rows: 337px;
   column-gap: 25px;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 261px 261px 261px 261px;
+    grid-template-rows: 337px;
+    column-gap: 20px;
+  }
 `;
 
 const FImage = styled.div`

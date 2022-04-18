@@ -13,31 +13,46 @@ import {
 } from "react-icons/ti";
 
 const FootergEl = styled.div`
-  position: relative;
-  padding: 78px 40px 32px 50px;
-  height: 482px;
-  width: 100vw;
+  height: 100%;
+  max-width: 1600px;
   margin-top: 196px;
   background-color: ${() => Colors.Brand.BGFooter};
+
+  @media (max-width: 1000px) {
+    max-width: 1000px;
+  }
 `;
 
 const Top = styled.div`
+  margin-top: 78px;
+  margin-bottom: 32px;
+  margin-left: 200px;
   display: grid;
-  grid-template-columns: 381px 165px 165px 165px;
-  column-gap: 70px;
+  grid-template-columns: 391px 180px 180px 200px;
+  column-gap: 65px;
   height: 330px;
+
+  @media (max-width: 1000px) {
+    margin-left: 50px;
+    grid-template-columns: 201px 150px 150px 150px;
+    column-gap: 50px;
+  }
 `;
 
 const Moto = styled.div`
-  width: 391px;
+  width: 201px;
 `;
 
 const Column = styled.div`
   display: flex;
   flex-direction: column;
+  text-align: start;
 `;
 
-const OrderedList = styled.ul``;
+const OrderedList = styled.ul`
+  margin-top: -10px;
+  margin-left: -38px;
+`;
 
 const ListItem = styled.li`
   list-style: none;
@@ -48,12 +63,20 @@ const Divider = styled.div`
   width: 1219px;
   height: 0.6px;
   background: ${Colors.Brand.BorderGrey};
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 const SocialMedia = styled.div`
   position: relative;
-  height: 85.4px;
-  width: 100vw;
+  height: 80.4px;
+  width: 1600px;
+
+  @media (max-width: 1000px) {
+    width: 1000px;
+  }
 `;
 
 const Icons = styled.div`

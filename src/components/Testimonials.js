@@ -15,6 +15,11 @@ const TestEl = styled.div`
   height: auto;
   width: 1036px;
   margin: 248px auto 0px auto;
+
+  @media (max-width: 1000px) {
+    width: 1000px;
+    margin-left: 130px;
+  }
 `;
 
 const Element2 = styled.div`

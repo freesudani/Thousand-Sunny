@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "../images/logo.svg";
-import { Colors, TextStyles } from "../theme/Theme";
 import Button from "../theme/Button.styled";
+import Logo from "../images/logo.svg";
 
 const pages = ["Home", "Destinations", "About", "Partner"];
 
@@ -13,6 +12,10 @@ const NavbarEl = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    padding: 0 5px 0 70px;
+  }
 `;
 
 const LeftPart = styled.div`
@@ -24,13 +27,21 @@ const LeftPart = styled.div`
 const RightPart = styled.div`
   display: flex;
   max-width: 663px;
+
+  @media (max-width: 1000px) {
+    max-width: 500px;
+  }
 `;
 
 const Navbar = () => {
   return (
     <NavbarEl>
       <LeftPart>
-        <img src={Logo} style={{ width: "41px", paddingTop: "10px" }} />
+        <img
+          src={Logo}
+          alt="logo"
+          style={{ width: "41px", paddingTop: "10px" }}
+        />
       </LeftPart>
       <RightPart>
         {pages.map((page, index) => (

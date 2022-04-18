@@ -1,13 +1,24 @@
 import React from "react";
 import Navbar from "./Navbar";
 import styled from "styled-components";
-import HeaderImg from "../images/thousand-01 1.png";
 import H1 from "../theme/H1.styled";
 import Subtitle1 from "../theme/Subtitle1.styled";
 import Button from "../theme/Button.styled";
+import HeaderImg from "../images/thousand-01 1.png";
 import elementImg1 from "../images/element3.png";
 import elementImg2 from "../images/element.png";
 import elementImg3 from "../images/element2.png";
+
+const HeaderEl = styled.div`
+  position: relative;
+  height: 786px;
+  width: 1415px;
+  margin: 38px auto 0px auto;
+
+  @media (max-width: 1000px) {
+    width: 1000px;
+  }
+`;
 
 const Element1 = styled.div`
   position: absolute;
@@ -34,13 +45,6 @@ const Bottom = styled.div`
 
 const Right = styled.div``;
 const Left = styled.div``;
-
-const HeaderEl = styled.div`
-  position: relative;
-  height: 786px;
-  width: 1415px;
-  margin: 38px auto 0px auto;
-`;
 
 const Title = styled.div`
   margin-left: 109px;

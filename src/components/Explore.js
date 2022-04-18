@@ -1,32 +1,45 @@
 import React from "react";
 import styled from "styled-components";
-import ExplorerImage from "../images/Thousand-02 1.png";
 import H2 from "../theme/H2.styled";
 import Body1 from "../theme/Body1.styled";
 import Button from "../theme/Button.styled";
+import ExplorerImage from "../images/Thousand-02 1.png";
 
 const ExploreEl = styled.div`
   position: relative;
   display: flex;
   justify-content: space-between;
-  height: 786px;
-  width: 100vw;
+  height: 550px;
+  width: 1242px;
   margin: 267px auto 0px auto;
+
+  @media (max-width: 1000px) {
+    width: 1000px;
+  }
 `;
 
 const Image = styled.div`
-  height: 534px;
-  width: 659px;
+  height: 100%;
+  max-width: 659px;
+
+  @media (max-width: 1000px) {
+    max-width: 500px;
+  }
 `;
 
 const NewWay = styled.div`
   height: auto;
-  width: 481px;
+  max-width: 481px;
   margin-top: 112px;
+
+  @media (max-width: 1000px) {
+    max-width: 500px;
+    margin-left: 290px;
+  }
 `;
 
 const Title = styled.div`
-  height: 100px;
+  height: auto;
   width: 481px;
 `;
 

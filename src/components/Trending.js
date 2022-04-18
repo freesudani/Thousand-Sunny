@@ -20,6 +20,10 @@ const TrendingEl = styled.div`
   margin-top: 213px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: 1000px) {
+    width: 1000px;
+  }
 `;
 
 const Top = styled.div`
@@ -45,6 +49,11 @@ const Bottom = styled.div`
   grid-template-columns: 266px 266px 266px 266px;
   grid-template-rows: 446px;
   column-gap: 24px;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 206px 206px 206px 206px;
+    column-gap: 24px;
+  }
 `;
 
 const TImage = styled.div`
@@ -55,6 +64,9 @@ const Element2 = styled.div`
   position: absolute;
   margin-top: 428px;
   margin-left: -50px;
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 const Trending = () => {

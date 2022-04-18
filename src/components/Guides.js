@@ -10,22 +10,33 @@ const GuideEl = styled.div`
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  height: 786px;
-  width: 1415px;
   margin: 173px auto 0px auto;
   height: 550px;
   width: 1242px;
+
+  @media (max-width: 1000px) {
+    width: 1000px;
+    margin-left: 120px;
+  }
 `;
 
 const Image = styled.div`
-  height: 542px;
-  width: 599px;
+  height: 100%;
+  max-width: 599px;
+
+  @media (max-width: 1000px) {
+    max-width: 500px;
+  }
 `;
 
 const NewWay = styled.div`
   height: auto;
-  width: 481px;
+  max-width: 481px;
   margin-top: 112px;
+
+  @media (max-width: 1000px) {
+    max-width: 500px;
+  }
 `;
 
 const Title = styled.div`
